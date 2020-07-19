@@ -4486,9 +4486,7 @@ body.no-padding {
     border-color: rgb(168, 168, 255);
 }
 
-.fixed-top {
-    position: sticky;
-    right: 0;
-    left: 0;
-    z-index: 1030
+.navbar-default,
+.navbar {
+    padding: 0.9rem 2.1rem;
 }
