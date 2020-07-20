@@ -4492,3 +4492,24 @@ body.no-padding {
     left: 0;
     z-index: 1030
 }
+
+.bg-primary,
+.btn-secondary {
+    background-color: #263640;
+}
+
+.btn:hover {
+    background-color: rgb(37, 43, 63);
+    color: white;
+}
+
+.bg {
+    background-color: #263640;
+    padding-top: 12px;
+    padding-bottom: 4px;
+}
+
+#addpassword,
+#addconfirmpassword {
+    color: red;
+}
