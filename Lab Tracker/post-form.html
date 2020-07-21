@@ -7,7 +7,7 @@
 <!-- /Added by HTTrack -->
 
 <head>
-    <title>Lab Tracker</title>
+    <title>Create a post</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="Sagarmatha Engineering College | Re-structuring your brain to discover engineer in you." />
@@ -15,7 +15,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Contains css of the page-->
 
+    <link rel="stylesheet" type="text/css" href="assets/public/css/bootstrap.min.css">
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+
+
+
+
+
+    <link rel="stylesheet" type="text/css" href="assets/public/css/bootstrap.min1.css">
     <link rel="stylesheet" type="text/css" href="http://sagarmatha.edu.np/assets/public/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -26,16 +37,12 @@
     <link rel="stylesheet" type="text/css" href="assets/public/css/slick.css">
     <link rel="stylesheet" type="text/css" href="assets/public/css/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="assets/public/css/custom.css">
-    <link rel="stylesheet" type="text/css" href="assets/public/css/bootstrap.min.css">
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-
     <link rel="stylesheet" type="text/css" href="assets/public/css/style.css">
 
     <link rel="stylesheet" type="text/css" href="assets/public/css/magnific-popup.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+
+
 </head>
 
 <body>
@@ -116,6 +123,17 @@
                         }
                     </style>
                     <li class="dropdown mega-dropdown">
+                        <a href="post-form.html" role="button"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Create Post          </a>
+
+                    </li>
+                    <style type="text/css">
+                        .navbar-default .navbar-nav .active .about,
+                        .navbar-default .navbar-nav li:hover .about,
+                        .navbar-default .navbar-right>.open>a:focus .contact {
+                            color: #008e5c;
+                        }
+                    </style>
+                    <li class="dropdown mega-dropdown">
                         <a href="contact.html" role="button"><i class="fa fa-envelope-open"></i>Contact  </a>
 
 
@@ -142,6 +160,18 @@
                         <a href="login.html" role="button"><i class="fa fa-sign-in" aria-hidden="true"></i>Login/Register          </a>
 
                     </li>
+
+                    <style type="text/css">
+                        .navbar-default .navbar-nav .active .about,
+                        .navbar-default .navbar-nav li:hover .about,
+                        .navbar-default .navbar-right>.open>a:focus .contact {
+                            color: #008e5c;
+                        }
+                    </style>
+                    <li class="dropdown mega-dropdown">
+                        <a href="logout.html" role="button"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout          </a>
+
+                    </li>
                 </ul>
             </div>
             <div class="collapse navbar-collapse collapse-hidden" id="bs-example-navbar-collapse-1">
@@ -160,6 +190,9 @@
                         <a href="blog.html"><i class="fa fa-rss" aria-hidden="true"></i>Blog              </a>
                     </li>
                     <li class="dropdown ">
+                        <a href="post-form.html"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Create Post          </a>
+                    </li>
+                    <li class="dropdown ">
                         <a href="contact.html"><i class="fa fa-envelope-open"></i>Contact</a></li>
                     </li>
                     <li class="dropdown ">
@@ -168,255 +201,46 @@
                     <li class="dropdown ">
                         <a href="login.html"><i class="fa fa-sign-in" aria-hidden="true"></i>Login/Register          </a>
                     </li>
+
+                    <li class="dropdown ">
+                        <a href="logout.html"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout          </a>
+                    </li>
+
                 </ul>
             </div>
         </div>
     </nav>
     <!-- Navbar ends -->
-    <div class="container-fluid">
-        <nav class="search">
-
-            <form class="form search">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-
-                <button class="btn btn-default" id='sear' type="submit"><i class="fa fa-search"></i>
-            </form>
-        </nav>
-        <div id="demo" class="carousel slide my-3" data-ride="carousel">
-            <ul class="carousel-indicators">
-                <li data-target="#demo" data-slide-to="0" class="active"></li>
-                <li data-target="#demo" data-slide-to="1"></li>
-                <li data-target="#demo" data-slide-to="2"></li>
-            </ul>
-
-            <!--Slideshow starts here -->
-            <div class="container carousel-inner no-padding">
-                <h4 id='title'>Micro-controller</h4>
-
-                <div class="carousel-item active">
-                    <div class="col-xs-3 col-sm-3 col-md-3">
-                        <div class="card" style="width: 18rem;">
-                            <img src='img/microcontroller/arduino-373994_1280.jpg' class="card-img-top" alt="img/small-default-product.jpg">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                Status: <button id="button">Available</button>
-                <a href="productview.html"><button id="button2" class="btn btn-primary cart ">View</button></a>
-    </div>
-    </div>
-    </div>
-
-    <div class="col-xs-3 col-sm-3 col-md-3">
-        <div class="card" style="width: 18rem;">
-            <img src='img/microcontroller/arduino-373994_1280.jpg' class="card-img-top" alt="img/small-default-product.jpg">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                Status: <button id="button">Available</button>
-                <a href="productview.html"><button id="button2" class="btn btn-primary cart ">View</button></a>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-xs-3 col-sm-3 col-md-3">
-        <div class="card" style="width: 18rem;">
-            <img src='img/microcontroller/arduino-373994_1280.jpg' class="card-img-top" alt="img/small-default-product.jpg">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                Status: <button id="button">Available</button>
-                <a href="productview.html"><button id="button2" class="btn btn-primary cart ">View</button></a>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-xs-3 col-sm-3 col-md-3">
-        <div class="card" style="width: 18rem;">
-            <img src='img/microcontroller/arduino-373994_1280.jpg' class="card-img-top" alt="img/small-default-product.jpg">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                Status: <button id="button">Available</button>
-                <a href="productview.html"><button id="button2" class="btn btn-primary cart ">View</button></a>
-            </div>
-        </div>
-    </div>
-    </div>
-
-
-
-    <div class="carousel-item">
-        <div class="col-xs-3 col-sm-3 col-md-3">
-            <div class="card" style="width: 18rem;">
-                <img src='img/microcontroller/arduino-373994_1280.jpg' class="card-img-top" alt="img/small-default-product.jpg">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    Status: <button id="button">Available</button>
-                    <a href="productview.html"><button id="button2" class="btn btn-primary cart ">View</button></a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-xs-3 col-sm-3 col-md-3">
-            <div class="card" style="width: 18rem;">
-                <img src='img/microcontroller/arduino-373994_1280.jpg' class="card-img-top" alt="img/small-default-product.jpg">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    Status: <button id="button">Available</button>
-                    <a href="productview.html"><button id="button2" class="btn btn-primary cart ">View</button></a>
-                </div>
-            </div>
-        </div>
-
-
-    </div>
-    <!-- left and right controls for the slide -->
-
-    <a class="carousel-control-prev" href="#demo" data-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-    </a>
-    <a class="carousel-control-next" href="#demo" data-slide="next">
-        <span class="carousel-control-next-icon"></span>
-    </a>
-    </div>
-    </div>
-    <div id="demo1" class="carousel slide my-3" data-ride="carousel">
-        <ul class="carousel-indicators">
-            <li data-target="#demo1" data-slide-to="3" class="active"></li>
-            <li data-target="#demo1" data-slide-to="4"></li>
-            <li data-target="#demo1" data-slide-to="5"></li>
-        </ul>
-
-        <!--Slideshow starts here -->
-        <div class="container carousel-inner no-padding">
-            <h4 id='title'>Drivers</h4>
-
-            <div class="carousel-item active">
-                <div class="col-xs-3 col-sm-3 col-md-3">
-                    <div class="card" style="width: 18rem;">
-                        <img src='img/driver/download.jpg' class="card-img-top" alt="img/small-default-product.jpg">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            Status: <button id="button">Available</button>
-                            <a href="productview.html"><button id="button2" class="btn btn-primary cart ">View</button></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xs-3 col-sm-3 col-md-3">
-                    <div class="card" style="width: 18rem;">
-                        <img src='img/driver/download.jpg' class="card-img-top" alt="img/small-default-product.jpg">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            Status: <button id="button">Available</button>
-                            <a href="productview.html"><button id="button2" class="btn btn-primary cart ">View</button></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xs-3 col-sm-3 col-md-3">
-                    <div class="card" style="width: 18rem;">
-                        <img src='img/driver/download.jpg' class="card-img-top" alt="img/small-default-product.jpg">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            Status: <button id="button">Available</button>
-                            <a href="productview.html"><button id="button2" class="btn btn-primary cart ">View</button></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xs-3 col-sm-3 col-md-3">
-                    <div class="card" style="width: 18rem;">
-                        <img src='img/driver/download.jpg' class="card-img-top" alt="img/small-default-product.jpg">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            Status: <button id="button">Available</button>
-                            <a href="productview.html"><button id="button2" class="btn btn-primary cart ">View</button></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="carousel-item">
-                <div class="col-xs-3 col-sm-3 col-md-3">
-                    <div class="card" style="width: 18rem;">
-                        <img src='img/driver/download.jpg' class="card-img-top" alt="img/small-default-product.jpg">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            Status: <button id="button">Available</button>
-                            <a href="productview.html"><button id="button2" class="btn btn-primary cart ">View</button></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xs-3 col-sm-3 col-md-3">
-                    <div class="card" style="width: 18rem;">
-                        <img src='img/driver/download.jpg' class="card-img-top" alt="img/small-default-product.jpg">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            Status: <button id="button">Available</button>
-                            <a href="productview.html"><button id="button2" class="btn btn-primary cart ">View</button></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xs-3 col-sm-3 col-md-3">
-                    <div class="card" style="width: 18rem;">
-                        <img src='img/driver/download.jpg' class="card-img-top" alt="img/small-default-product.jpg">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            Status: <button id="button">Available</button>
-                            <a href="productview.html"><button id="button2" class="btn btn-primary cart ">View</button></a>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-
-
-            <!-- left and right controls for the slide -->
-
-            <a class="carousel-control-prev" href="#demo1" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next" href="#demo1" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </a>
-        </div>
-    </div>
-
-
-    </div>
     <div class="container">
-        <nav aria-label="Page navigation example">
-            <ul class="pagination">
-                <li class="page-item disabled">
-                    <a class="page-link " href="#" tabindex="-1" aria-disabled="true">Previous</a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item active" aria-current="page">
-                    <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                    <a class="page-link" href="#">Next</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="content-section">
+            <form action='update_delete.html' method="POST">
+                <input type="hidden" name="csrfmiddlewaretoken" value="G3bIkLFm2pSW3UFI9INCQD8rdmAgdMUpzWSzsnlVaW6tQ6nZyz6aGyg16ACg4oz2">
+                <fieldset class="form-group">
+                    <legend class="border-bottom mb-4">Blog Post</legend>
+
+
+                    <div id="div_id_title" class="form-group"> <label for="id_title" class=" requiredField">
+                    Title<span class="asteriskField">*</span> </label>
+                        <div class=""> <input type="text" name="title" maxlength="100" class="textinput textInput form-control" required id="id_title"> </div>
+                    </div>
+                    <div id="div_id_content" class="form-group"> <label for="id_content" class=" requiredField">
+                    Content<span class="asteriskField">*</span> </label>
+                        <div class=""> <textarea name="content" cols="40" rows="10" class="textarea form-control" required id="id_content">
+    </textarea> </div>
+                    </div>
+
+
+                </fieldset>
+                <div class="form-group">
+                    <button class="btn btn-primary" type="submit"><a href='update_delete.html' class="post">Post</a></button>
+                </div>
+            </form>
+
+
+        </div>
     </div>
 
+    <!-- footer starts -->
     <footer id="footer" class="footer-inverse">
         <div id="footer-inner">
             <div class="container">
@@ -505,11 +329,11 @@
                 <li>
                     <a href="http://sagarmatha.edu.np/quicklinks/code-of-conduct/">Student's Code of Conduct</a>
                 </li>
-                <!--<li><i class="fa fa-file-image-o"></i><a href="#">Gallery </a></li>-->
+
             </ul>
         </div>
     </div>
-
+    <!-- footer ends -->
 
 
 
